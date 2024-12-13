@@ -41,7 +41,8 @@ body {
 .intro-section,
 .location-section,
 .sobre-section,
-.contact-section {
+.contact-section,
+.horarios-section {
     width: 100%;
     max-width: 800px;
     margin: 40px auto; /* Adicionar espaço vertical entre as seções */
@@ -54,7 +55,8 @@ body {
 
 .location-section h2,
 .sobre-section h2,
-.contact-section h2 {
+.contact-section h2,
+.horarios-section h2 {
     margin-bottom: 20px;
     color: #000; /* Definir a cor do texto do título como preto */
 }
@@ -117,6 +119,19 @@ footer {
     padding: 10px;
     font-size: 14px;
     border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
+}
+
+.contact-section a {
+    color: #000; /* Definir a cor do texto do link como preto */
+    text-decoration: none; /* Remover sublinhado do link */
+}
+
+.contact-section a:hover {
+    color: #007bff; /* Cor do link ao passar o mouse */
+}
+
+.contact-section i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
 
 /* Media Queries for extra small screens */
