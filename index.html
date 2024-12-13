@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filhos do Leão</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header d-flex align-items-center p-3">
+        <nav class="navbar navbar-expand-md navbar-light w-100">
+            <a class="navbar-brand" href="#carouselExampleAutoplaying">
+                <img src="./images/logo/logo.png" alt="Logo da Igreja" class="logo">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#localizacao">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex flex-column align-items-center">
+        <section id="intro" class="intro-section mt-4">
+            <p>Bem-vindo à Comunidade Evangélica Filhos do Leão. Aqui você encontrará um ambiente acolhedor e uma comunidade dedicada a servir a Deus e ao próximo. Junte-se a nós em nossas atividades e cultos semanais.</p>
+        </section>
+        <section id="carouselExampleAutoplaying" class="carousel slide custom-carousel" data-bs-ride="carousel">
+            <ol class="carousel-indicators"></ol>
+            <div class="carousel-inner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section id="sobre" class="sobre-section mt-4">
+            <h2>Sobre</h2>
+            <p>Informações sobre a Comunidade Evangélica Filhos do Leão.</p>
+        </section>
+        <section id="localizacao" class="location-section mt-4">
+            <h2>Localização</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126431.7681256459!2d-40.4123006!3d-20.2637026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8410063e7b4fb%3A0xfacfde774e657a27!2sComunidade%20Evang%C3%A9lica%20Filhos%20do%20Le%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1697031234567!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p><a href="https://www.google.com/maps/dir/?api=1&destination=Comunidade+Evang%C3%A9lica+Filhos+do+Le%C3%A3o" target="_blank">Abrir no Google Maps</a></p>
+        </section>
+        <section id="contato" class="contact-section mt-4">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco pelo telefone (XX) XXXX-XXXX ou pelo e-mail contato@filhosdoleao.com.br.</p>
+        </section>
+    </main>
+    <footer class="text-center p-3">
+        <p>&copy; 2024 Filhos do Leão. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
