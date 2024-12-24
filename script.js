@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         './images/eventos/evento5.jpg',
     ];
 
+    const celulasImages = [
+        './images/celulas/celula1.jpg',
+        './images/celulas/celula2.jpg',
+        './images/celulas/celula3.jpg',
+    ];
+
     function setupCarousel(carouselId, images) {
         const carouselInner = document.querySelector(`#${carouselId} .carousel-inner`);
         const carouselIndicators = document.querySelector(`#${carouselId} .carousel-indicators`);
@@ -47,12 +53,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Optional: Add autoplay functionality
-        new bootstrap.Carousel(document.querySelector(`#${carouselId}`), {
+        const carousel = new bootstrap.Carousel(document.querySelector(`#${carouselId}`), {
             interval: 3000,
             ride: 'carousel'
         });
+
+        // Add drag functionality
+        let startX, endX;
+        const carouselElement = document.querySelector(`#${carouselId}`);
+
+        carouselElement.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+        });
+
+        carouselElement.addEventListener('mouseup', (e) => {
+            endX = e.clientX;
+            handleSwipe();
+        });
+
+        carouselElement.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        carouselElement.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (startX > endX) {
+                carousel.next();
+            } else if (startX < endX) {
+                carousel.prev();
+            }
+        }
     }
 
     setupCarousel('carouselExampleAutoplaying', carouselImages);
     setupCarousel('eventosCarousel', eventImages);
+    setupCarousel('celulasCarousel', celulasImages);
 });

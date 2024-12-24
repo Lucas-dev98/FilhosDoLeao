@@ -82,17 +82,33 @@ body {
     background: #FFF;
 }
 
-.horarios-section ul {
+/* Reutilizando a formatação dos horários de culto para os horários das células */
+.horarios-section,
+.celulas-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto; /* Adicionar espaço vertical entre as seções */
+    text-align: center;
+    background-color: #fff; /* Definir a cor de fundo da seção como branco */
+    padding: 20px;
+    border-radius: 10px; /* Adicionar bordas arredondadas à seção */
+    color: #000; /* Definir a cor do texto como preto */
+}
+
+.horarios-section ul,
+.celulas-section ul {
     list-style-type: none; /* Remove os marcadores de lista */
     padding: 0; /* Remove o padding padrão */
 }
 
-.horarios-section li {
+.horarios-section li,
+.celulas-section li {
     padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
     border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
 }
 
-.horarios-section li:last-child {
+.horarios-section li:last-child,
+.celulas-section li:last-child {
     border-bottom: none; /* Remove a linha inferior do último item */
 }
 
