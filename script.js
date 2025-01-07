@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const eventImages = [
         './images/eventos/evento1.jpg',   
-        './images/eventos/evento2.jpg',
+        // './images/eventos/evento2.jpg',
         './images/eventos/evento3.jpg',
-        './images/eventos/evento4.jpg',
-        './images/eventos/evento5.jpg',
+        // './images/eventos/evento4.jpg',
+        // './images/eventos/evento5.jpg',
     ];
 
     const celulasImages = [
@@ -21,10 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
         './images/celulas/celula3.jpg',
     ];
 
+    const departamentosImages = [
+        './images/departamentos/departamento1.jpg',
+        './images/departamentos/departamento2.jpg',
+        './images/departamentos/departamento3.jpg',
+        './images/departamentos/departamento4.jpg',
+        './images/departamentos/departamento5.jpg',
+    ];
+
     function setupCarousel(carouselId, images) {
         const carouselInner = document.querySelector(`#${carouselId} .carousel-inner`);
         const carouselIndicators = document.querySelector(`#${carouselId} .carousel-indicators`);
-
         images.forEach((image, index) => {
             // Create carousel item
             const carouselItem = document.createElement('div');
@@ -92,4 +99,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setupCarousel('carouselExampleAutoplaying', carouselImages);
     setupCarousel('eventosCarousel', eventImages);
     setupCarousel('celulasCarousel', celulasImages);
+    setupCarousel('departamentosCarousel', departamentosImages);
 });

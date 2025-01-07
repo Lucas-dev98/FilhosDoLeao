@@ -43,7 +43,8 @@ body {
 .sobre-section,
 .contact-section,
 .horarios-section,
-.eventos-section {
+.eventos-section,
+.departamentos-section  {
     width: 100%;
     max-width: 800px;
     margin: 40px auto; /* Adicionar espaço vertical entre as seções */
@@ -96,19 +97,22 @@ body {
 }
 
 .horarios-section ul,
-.celulas-section ul {
+.celulas-section ul,
+.departamentos-section ul {
     list-style-type: none; /* Remove os marcadores de lista */
     padding: 0; /* Remove o padding padrão */
 }
 
 .horarios-section li,
-.celulas-section li {
+.celulas-section li, 
+.departamentos-section li {
     padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
     border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
 }
 
 .horarios-section li:last-child,
-.celulas-section li:last-child {
+.celulas-section li:last-child,
+.departamentos-section li:last-child  {
     border-bottom: none; /* Remove a linha inferior do último item */
 }
 
