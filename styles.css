@@ -1,727 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Definir a cor de fundo do body como preto */
-    color: #fff; /* Definir a cor do texto como branco para contraste */
-    margin: 0;
-    padding: 20px; /* Adicionar margens internas ao body */
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Definir a cor de fundo do body como preto */
+  color: #fff; /* Definir a cor do texto como branco para contraste */
+  margin: 0;
+  padding: 20px; /* Adicionar margens internas ao body */
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff; /* Definir a cor de fundo do header como branco */
-    color: #000; /* Definir a cor do texto do header como preto */
-    border-radius: 10px; /* Adicionar bordas arredondadas ao header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff; /* Definir a cor de fundo do header como branco */
+  color: #000; /* Definir a cor do texto do header como preto */
+  border-radius: 10px; /* Adicionar bordas arredondadas ao header */
 }
 
 .header .logo {
-    max-width: 20vw; /* Reduzir o tamanho da logo para 20% da largura da viewport */
-    max-height: 20vh; /* Reduzir o tamanho da logo para 20% da altura da viewport */
+  max-width: 20vw; /* Reduzir o tamanho da logo para 20% da largura da viewport */
+  max-height: 20vh; /* Reduzir o tamanho da logo para 20% da altura da viewport */
 }
 
 .navbar {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
-    margin: 10px 0; /* Espaçamento vertical entre os itens do menu */
-}
-
-.intro-section,
-.location-section,
-.sobre-section,
-.contact-section,
-.horarios-section,
-.eventos-section,
-.departamentos-section  {
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto; /* Adicionar espaço vertical entre as seções */
-    text-align: center;
-    background-color: #fff; /* Definir a cor de fundo da seção como branco */
-    padding: 20px;
-    border-radius: 10px; /* Adicionar bordas arredondadas à seção */
-    color: #000; /* Definir a cor do texto como preto */
-}
-
-.location-section h2,
-.sobre-section h2,
-.contact-section h2,
-.horarios-section h2,
-.eventos-section h2 {
-    margin-bottom: 20px;
-    color: #000; /* Definir a cor do texto do título como preto */
-}
-
-.location-section iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-    border-radius: 10px; /* Adicionar bordas arredondadas ao iframe */
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #000; /* Definir a cor do texto dos links como preto */
-}
-
-.wrap {
-    max-width: 70rem;
-    margin: auto;
-    padding: 2rem;
-    background: #FFF;
-}
-
-/* Reutilizando a formatação dos horários de culto para os horários das células */
-.horarios-section,
-.celulas-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto; /* Adicionar espaço vertical entre as seções */
-    text-align: center;
-    background-color: #fff; /* Definir a cor de fundo da seção como branco */
-    padding: 20px;
-    border-radius: 10px; /* Adicionar bordas arredondadas à seção */
-    color: #000; /* Definir a cor do texto como preto */
-}
-
-.horarios-section ul,
-.celulas-section ul,
-.departamentos-section ul {
-    list-style-type: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o padding padrão */
-}
-
-.horarios-section li,
-.celulas-section li, 
-.departamentos-section li {
-    padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
-    border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
-}
-
-.horarios-section li:last-child,
-.celulas-section li:last-child,
-.departamentos-section li:last-child  {
-    border-bottom: none; /* Remove a linha inferior do último item */
-}
-
-.carousel {
-    position: relative;
-    display: flex;
-    max-width: 64rem;
-    min-height: 40rem;
-    margin: auto;
-    background: black;
-    justify-content: center;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
-    object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
-}
-
-.custom-carousel .carousel-inner {
-    border-radius: 15px; /* Adicionar bordas arredondadas ao carrossel */
-    overflow: hidden; /* Esconder o conteúdo que ultrapassa as bordas arredondadas */
-}
-
-.custom-carousel .carousel-control-prev-icon,
-.custom-carousel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Adicionar um fundo semitransparente aos ícones de controle */
-    border-radius: 50%; /* Tornar os ícones de controle circulares */
-}
-
-/* Ocultar os botões de navegação do carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    display: none;
-}
-
-footer {
-    background-color: #000; /* Definir a cor de fundo do footer como preto */
-    color: #fff; /* Definir a cor do texto do footer como branco */
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
-}
-
-.contact-section a {
-    color: #000; /* Definir a cor do texto do link como preto */
-    text-decoration: none; /* Remover sublinhado do link */
-}
-
-.contact-section a:hover {
-    color: #007bff; /* Cor do link ao passar o mouse */
-}
-
-.contact-section i {
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-}
-
-.contact-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.contact-icons p {
-    margin: 0;
-}
-
-/* Media Queries for extra small screens */
-@media (max-width: 578.98px) {
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .header .logo {
-        max-width: 30vw; /* Ajustar o tamanho da logo para 30% da largura da viewport em telas extra pequenas */
-        max-height: 30vh; /* Ajustar o tamanho da logo para 30% da altura da viewport em telas extra pequenas */
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .nav-item {
-        margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
-    }
-
-    .navbar-collapse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel {
-        max-width: 100vw; /* Ajustar o tamanho do carrossel para 100% da largura da viewport em telas extra pequenas */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 10px;
-        font-size: 12px;
-    }
-}
-
-/* Media Queries for small screens */
-@media (max-width: 767.98px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px;
-    }
-
-    .header .logo {
-        order: 2;
-        margin-left: auto;
-        max-width: 15vw; /* Ajustar o tamanho da logo para 15% da largura da viewport em telas pequenas */
-        max-height: 15vh; /* Ajustar o tamanho da logo para 15% da altura da viewport em telas pequenas */
-    }
-
-    .navbar-toggler {
-        order: 1;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-item {
-        margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 80vw; /* Ajustar o tamanho do carrossel para 80% da largura da viewport em telas pequenas */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 15px;
-    }
-}
-
-/* Media Queries for medium screens */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    .header .logo {
-        max-width: 10vw; /* Ajustar o tamanho da logo para 10% da largura da viewport em telas médias */
-        max-height: 10vh; /* Ajustar o tamanho da logo para 10% da altura da viewport em telas médias */
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .nav-item {
-        margin: 0 30px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 70vw; /* Ajustar o tamanho do carrossel para 70% da largura da viewport em telas médias */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 20px;
-        font-size: 16px;
-    }
-}
-
-/* Media Queries for large screens */
-@media (min-width: 992px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px; /* Espaçamento horizontal entre os itens do menu */
-        width: 100%;
-    }
-
-    .header .logo {
-        max-width: 8vw; /* Ajustar o tamanho da logo para 8% da largura da viewport em telas grandes */
-        max-height: 8vh; /* Ajustar o tamanho da logo para 8% da altura da viewport em telas grandes */
-    }
-
-    .carousel {
-        max-width: 60vw; /* Ajustar o tamanho do carrossel para 60% da largura da viewport em telas grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 25px;
-        font-size: 18px;
-    }
-}
-
-/* Media Queries for extra large screens */
-@media (min-width: 1200px) {
-    .header .logo {
-        max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
-        max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
-    }
-
-    .nav-item {
-        margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 30px;
-        font-size: 20px;
-    }
-}
-
-/* Media Queries for very large screens */
-@media (min-width: 1534px) {
-    /* Add your styles for very large screens here */
-/* Add your styles for very large screens here */
-    .body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Definir a cor de fundo do body como preto */
-    color: #fff; /* Definir a cor do texto como branco para contraste */
-    margin: 0;
-    padding: 20px; /* Adicionar margens internas ao body */
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff; /* Definir a cor de fundo do header como branco */
-    color: #000; /* Definir a cor do texto do header como preto */
-    border-radius: 10px; /* Adicionar bordas arredondadas ao header */
-}
-
-.header .logo {
-    max-width: 20vw; /* Reduzir o tamanho da logo para 20% da largura da viewport */
-    max-height: 20vh; /* Reduzir o tamanho da logo para 20% da altura da viewport */
-}
-
-.navbar {
-    width: 100%;
-    text-align: center;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-item {
-    margin: 10px 0; /* Espaçamento vertical entre os itens do menu */
-}
-
-.intro-section,
-.location-section,
-.sobre-section,
-.contact-section,
-.horarios-section,
-.eventos-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto; /* Adicionar espaço vertical entre as seções */
-    text-align: center;
-    background-color: #fff; /* Definir a cor de fundo da seção como branco */
-    padding: 20px;
-    border-radius: 10px; /* Adicionar bordas arredondadas à seção */
-    color: #000; /* Definir a cor do texto como preto */
-}
-
-.location-section h2,
-.sobre-section h2,
-.contact-section h2,
-.horarios-section h2,
-.eventos-section h2 {
-    margin-bottom: 20px;
-    color: #000; /* Definir a cor do texto do título como preto */
-}
-
-.location-section iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-    border-radius: 10px; /* Adicionar bordas arredondadas ao iframe */
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #000; /* Definir a cor do texto dos links como preto */
-}
-
-.wrap {
-    max-width: 70rem;
-    margin: auto;
-    padding: 2rem;
-    background: #FFF;
-}
-
-.carousel {
-    position: relative;
-    display: flex;
-    max-width: 64rem;
-    min-height: 40rem;
-    margin: auto;
-    background: black;
-    justify-content: center;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
-    object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
-}
-
-.custom-carousel .carousel-inner {
-    border-radius: 15px; /* Adicionar bordas arredondadas ao carrossel */
-    overflow: hidden; /* Esconder o conteúdo que ultrapassa as bordas arredondadas */
-}
-
-.custom-carousel .carousel-control-prev-icon,
-.custom-carousel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Adicionar um fundo semitransparente aos ícones de controle */
-    border-radius: 50%; /* Tornar os ícones de controle circulares */
-}
-
-/* Ocultar os botões de navegação do carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    display: none;
-}
-
-footer {
-    background-color: #000; /* Definir a cor de fundo do footer como preto */
-    color: #fff; /* Definir a cor do texto do footer como branco */
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
-}
-
-.contact-section a {
-    color: #000; /* Definir a cor do texto do link como preto */
-    text-decoration: none; /* Remover sublinhado do link */
-}
-
-.contact-section a:hover {
-    color: #007bff; /* Cor do link ao passar o mouse */
-}
-
-.contact-section i {
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-}
-
-.contact-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.contact-icons p {
-    margin: 0;
-}
-}
-
-/* Media Queries for extra small screens */
-@media (max-width: 578.98px) {
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .header .logo {
-        max-width: 30vw; /* Ajustar o tamanho da logo para 30% da largura da viewport em telas extra pequenas */
-        max-height: 30vh; /* Ajustar o tamanho da logo para 30% da altura da viewport em telas extra pequenas */
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .nav-item {
-        margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
-    }
-
-    .navbar-collapse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel {
-        max-width: 100vw; /* Ajustar o tamanho do carrossel para 100% da largura da viewport em telas extra pequenas */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 10px;
-        font-size: 12px;
-    }
-}
-
-/* Media Queries for small screens */
-@media (max-width: 767.98px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px;
-    }
-
-    .header .logo {
-        order: 2;
-        margin-left: auto;
-        max-width: 15vw; /* Ajustar o tamanho da logo para 15% da largura da viewport em telas pequenas */
-        max-height: 15vh; /* Ajustar o tamanho da logo para 15% da altura da viewport em telas pequenas */
-    }
-
-    .navbar-toggler {
-        order: 1;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-item {
-        margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 80vw; /* Ajustar o tamanho do carrossel para 80% da largura da viewport em telas pequenas */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 15px;
-    }
-}
-
-/* Media Queries for medium screens */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    .header .logo {
-        max-width: 10vw; /* Ajustar o tamanho da logo para 10% da largura da viewport em telas médias */
-        max-height: 10vh; /* Ajustar o tamanho da logo para 10% da altura da viewport em telas médias */
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .nav-item {
-        margin: 0 30px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 70vw; /* Ajustar o tamanho do carrossel para 70% da largura da viewport em telas médias */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 20px;
-        font-size: 16px;
-    }
-}
-
-/* Media Queries for large screens */
-@media (min-width: 992px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px; /* Espaçamento horizontal entre os itens do menu */
-        width: 100%;
-    }
-
-    .header .logo {
-        max-width: 8vw; /* Ajustar o tamanho da logo para 8% da largura da viewport em telas grandes */
-        max-height: 8vh; /* Ajustar o tamanho da logo para 8% da altura da viewport em telas grandes */
-    }
-
-    .carousel {
-        max-width: 60vw; /* Ajustar o tamanho do carrossel para 60% da largura da viewport em telas grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 25px;
-        font-size: 18px;
-    }
-}
-
-/* Media Queries for extra large screens */
-@media (min-width: 1200px) {
-    .header .logo {
-        max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
-        max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
-    }
-
-    .nav-item {
-        margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 30px;
-        font-size: 20px;
-    }
-}
-
-/* Media Queries for very large screens */
-@media (min-width: 1534px) {
-    .header .logo {
-        max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
-        max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
-    }
-
-    .nav-item {
-        margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
-
-    .carousel {
-        max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
-
-    footer {
-        padding: 30px;
-        font-size: 20px;
-    }
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Definir a cor de fundo do body como preto */
-    color: #fff; /* Definir a cor do texto como branco para contraste */
-    margin: 0;
-    padding: 20px; /* Adicionar margens internas ao body */
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff; /* Definir a cor de fundo do header como branco */
-    color: #000; /* Definir a cor do texto do header como preto */
-    border-radius: 10px; /* Adicionar bordas arredondadas ao header */
-}
-
-.header .logo {
-    max-width: 20vw; /* Reduzir o tamanho da logo para 20% da largura da viewport */
-    max-height: 20vh; /* Reduzir o tamanho da logo para 20% da altura da viewport */
-}
-
-.navbar {
-    width: 100%;
-    text-align: center;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-item {
-    margin: 10px 0; /* Espaçamento vertical entre os itens do menu */
+  margin: 10px 0; /* Espaçamento vertical entre os itens do menu */
 }
 
 .intro-section,
@@ -731,6 +45,384 @@ body {
 .horarios-section,
 .eventos-section,
 .departamentos-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto; /* Adicionar espaço vertical entre as seções */
+  text-align: center;
+  background-color: #fff; /* Definir a cor de fundo da seção como branco */
+  padding: 20px;
+  border-radius: 10px; /* Adicionar bordas arredondadas à seção */
+  color: #000; /* Definir a cor do texto como preto */
+}
+
+.location-section h2,
+.sobre-section h2,
+.contact-section h2,
+.horarios-section h2,
+.eventos-section h2 {
+  margin-bottom: 20px;
+  color: #000; /* Definir a cor do texto do título como preto */
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a seção de contato */
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo para a seção de contato */
+    border-radius: 10px; /* Bordas arredondadas para a seção de contato */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column; /* Alinha os itens um abaixo do outro */
+    align-items: center; /* Alinha os itens ao centro */
+    width: 100%;
+}
+
+.contact-icons p {
+    margin: 10px 0; /* Espaçamento vertical entre os itens */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.location-section iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 10px; /* Adicionar bordas arredondadas ao iframe */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000; /* Definir a cor do texto dos links como preto */
+}
+
+.wrap {
+  max-width: 70rem;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+}
+
+/* Reutilizando a formatação dos horários de culto para os horários das células */
+.horarios-section,
+.celulas-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto; /* Adicionar espaço vertical entre as seções */
+  text-align: center;
+  background-color: #fff; /* Definir a cor de fundo da seção como branco */
+  padding: 20px;
+  border-radius: 10px; /* Adicionar bordas arredondadas à seção */
+  color: #000; /* Definir a cor do texto como preto */
+}
+
+.horarios-section ul,
+.celulas-section ul,
+.departamentos-section ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o padding padrão */
+}
+
+.horarios-section li,
+.celulas-section li,
+.departamentos-section li {
+  padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
+  border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
+}
+
+.horarios-section li:last-child,
+.celulas-section li:last-child,
+.departamentos-section li:last-child {
+  border-bottom: none; /* Remove a linha inferior do último item */
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  max-width: 64rem;
+  min-height: 40rem;
+  margin: auto;
+  background: black;
+  justify-content: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
+  object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
+}
+
+.custom-carousel .carousel-inner {
+  border-radius: 15px; /* Adicionar bordas arredondadas ao carrossel */
+  overflow: hidden; /* Esconder o conteúdo que ultrapassa as bordas arredondadas */
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adicionar um fundo semitransparente aos ícones de controle */
+  border-radius: 50%; /* Tornar os ícones de controle circulares */
+}
+
+/* Ocultar os botões de navegação do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+footer {
+  background-color: #000; /* Definir a cor de fundo do footer como preto */
+  color: #fff; /* Definir a cor do texto do footer como branco */
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
+}
+
+.contact-section a {
+  color: #000; /* Definir a cor do texto do link como preto */
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+.contact-section a:hover {
+  color: #007bff; /* Cor do link ao passar o mouse */
+}
+
+.contact-section i {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column; /* Alinha os itens um abaixo do outro */
+    align-items: center; /* Alinha os itens ao centro */
+    width: 100%;
+}
+
+.contact-icons p {
+    margin: 10px 0; /* Espaçamento vertical entre os itens */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Media Queries for extra small screens */
+@media (max-width: 578.98px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header .logo {
+    max-width: 30vw; /* Ajustar o tamanho da logo para 30% da largura da viewport em telas extra pequenas */
+    max-height: 30vh; /* Ajustar o tamanho da logo para 30% da altura da viewport em telas extra pequenas */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    max-width: 100vw; /* Ajustar o tamanho do carrossel para 100% da largura da viewport em telas extra pequenas */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Media Queries for small screens */
+@media (max-width: 767.98px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .header .logo {
+    order: 2;
+    margin-left: auto;
+    max-width: 15vw; /* Ajustar o tamanho da logo para 15% da largura da viewport em telas pequenas */
+    max-height: 15vh; /* Ajustar o tamanho da logo para 15% da altura da viewport em telas pequenas */
+  }
+
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 80vw; /* Ajustar o tamanho do carrossel para 80% da largura da viewport em telas pequenas */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+/* Media Queries for medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .header .logo {
+    max-width: 10vw; /* Ajustar o tamanho da logo para 10% da largura da viewport em telas médias */
+    max-height: 10vh; /* Ajustar o tamanho da logo para 10% da altura da viewport em telas médias */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0 30px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 70vw; /* Ajustar o tamanho do carrossel para 70% da largura da viewport em telas médias */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Media Queries for large screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px; /* Espaçamento horizontal entre os itens do menu */
+    width: 100%;
+  }
+
+  .header .logo {
+    max-width: 8vw; /* Ajustar o tamanho da logo para 8% da largura da viewport em telas grandes */
+    max-height: 8vh; /* Ajustar o tamanho da logo para 8% da altura da viewport em telas grandes */
+  }
+
+  .carousel {
+    max-width: 60vw; /* Ajustar o tamanho do carrossel para 60% da largura da viewport em telas grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 25px;
+    font-size: 18px;
+  }
+}
+
+/* Media Queries for extra large screens */
+@media (min-width: 1200px) {
+  .header .logo {
+    max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
+    max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
+  }
+
+  .nav-item {
+    margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+
+/* Media Queries for very large screens */
+@media (min-width: 1534px) {
+  /* Add your styles for very large screens here */
+  /* Add your styles for very large screens here */
+  .body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Definir a cor de fundo do body como preto */
+    color: #fff; /* Definir a cor do texto como branco para contraste */
+    margin: 0;
+    padding: 20px; /* Adicionar margens internas ao body */
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; /* Definir a cor de fundo do header como branco */
+    color: #000; /* Definir a cor do texto do header como preto */
+    border-radius: 10px; /* Adicionar bordas arredondadas ao header */
+  }
+
+  .header .logo {
+    max-width: 20vw; /* Reduzir o tamanho da logo para 20% da largura da viewport */
+    max-height: 20vh; /* Reduzir o tamanho da logo para 20% da altura da viewport */
+  }
+
+  .navbar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Espaçamento vertical entre os itens do menu */
+  }
+
+  .intro-section,
+  .location-section,
+  .sobre-section,
+  .contact-section,
+  .horarios-section,
+  .eventos-section {
     width: 100%;
     max-width: 800px;
     margin: 40px auto; /* Adicionar espaço vertical entre as seções */
@@ -739,6 +431,347 @@ body {
     padding: 20px;
     border-radius: 10px; /* Adicionar bordas arredondadas à seção */
     color: #000; /* Definir a cor do texto como preto */
+  }
+
+  .location-section h2,
+  .sobre-section h2,
+  .contact-section h2,
+  .horarios-section h2,
+  .eventos-section h2 {
+    margin-bottom: 20px;
+    color: #000; /* Definir a cor do texto do título como preto */
+  }
+
+  .location-section iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px; /* Adicionar bordas arredondadas ao iframe */
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #000; /* Definir a cor do texto dos links como preto */
+  }
+
+  .wrap {
+    max-width: 70rem;
+    margin: auto;
+    padding: 2rem;
+    background: #fff;
+  }
+
+  .carousel {
+    position: relative;
+    display: flex;
+    max-width: 64rem;
+    min-height: 40rem;
+    margin: auto;
+    background: black;
+    justify-content: center;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
+    object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
+  }
+
+  .custom-carousel .carousel-inner {
+    border-radius: 15px; /* Adicionar bordas arredondadas ao carrossel */
+    overflow: hidden; /* Esconder o conteúdo que ultrapassa as bordas arredondadas */
+  }
+
+  .custom-carousel .carousel-control-prev-icon,
+  .custom-carousel .carousel-control-next-icon {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Adicionar um fundo semitransparente aos ícones de controle */
+    border-radius: 50%; /* Tornar os ícones de controle circulares */
+  }
+
+  /* Ocultar os botões de navegação do carrossel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  footer {
+    background-color: #000; /* Definir a cor de fundo do footer como preto */
+    color: #fff; /* Definir a cor do texto do footer como branco */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
+  }
+
+  .contact-section a {
+    color: #000; /* Definir a cor do texto do link como preto */
+    text-decoration: none; /* Remover sublinhado do link */
+  }
+
+  .contact-section a:hover {
+    color: #007bff; /* Cor do link ao passar o mouse */
+  }
+
+  .contact-section i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact-icons p {
+    margin: 0;
+  }
+}
+
+/* Media Queries for extra small screens */
+@media (max-width: 578.98px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header .logo {
+    max-width: 30vw; /* Ajustar o tamanho da logo para 30% da largura da viewport em telas extra pequenas */
+    max-height: 30vh; /* Ajustar o tamanho da logo para 30% da altura da viewport em telas extra pequenas */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    max-width: 100vw; /* Ajustar o tamanho do carrossel para 100% da largura da viewport em telas extra pequenas */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Media Queries for small screens */
+@media (max-width: 767.98px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .header .logo {
+    order: 2;
+    margin-left: auto;
+    max-width: 15vw; /* Ajustar o tamanho da logo para 15% da largura da viewport em telas pequenas */
+    max-height: 15vh; /* Ajustar o tamanho da logo para 15% da altura da viewport em telas pequenas */
+  }
+
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 80vw; /* Ajustar o tamanho do carrossel para 80% da largura da viewport em telas pequenas */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+/* Media Queries for medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .header .logo {
+    max-width: 10vw; /* Ajustar o tamanho da logo para 10% da largura da viewport em telas médias */
+    max-height: 10vh; /* Ajustar o tamanho da logo para 10% da altura da viewport em telas médias */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0 30px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 70vw; /* Ajustar o tamanho do carrossel para 70% da largura da viewport em telas médias */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Media Queries for large screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px; /* Espaçamento horizontal entre os itens do menu */
+    width: 100%;
+  }
+
+  .header .logo {
+    max-width: 8vw; /* Ajustar o tamanho da logo para 8% da largura da viewport em telas grandes */
+    max-height: 8vh; /* Ajustar o tamanho da logo para 8% da altura da viewport em telas grandes */
+  }
+
+  .carousel {
+    max-width: 60vw; /* Ajustar o tamanho do carrossel para 60% da largura da viewport em telas grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 25px;
+    font-size: 18px;
+  }
+}
+
+/* Media Queries for extra large screens */
+@media (min-width: 1200px) {
+  .header .logo {
+    max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
+    max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
+  }
+
+  .nav-item {
+    margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+
+/* Media Queries for very large screens */
+@media (min-width: 1534px) {
+  .header .logo {
+    max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
+    max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
+  }
+
+  .nav-item {
+    margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
+
+  .carousel {
+    max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
+
+  footer {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Definir a cor de fundo do body como preto */
+  color: #fff; /* Definir a cor do texto como branco para contraste */
+  margin: 0;
+  padding: 20px; /* Adicionar margens internas ao body */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff; /* Definir a cor de fundo do header como branco */
+  color: #000; /* Definir a cor do texto do header como preto */
+  border-radius: 10px; /* Adicionar bordas arredondadas ao header */
+}
+
+.header .logo {
+  max-width: 20vw; /* Reduzir o tamanho da logo para 20% da largura da viewport */
+  max-height: 20vh; /* Reduzir o tamanho da logo para 20% da altura da viewport */
+}
+
+.navbar {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 10px 0; /* Espaçamento vertical entre os itens do menu */
+}
+
+.intro-section,
+.location-section,
+.sobre-section,
+.contact-section,
+.horarios-section,
+.eventos-section,
+.departamentos-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto; /* Adicionar espaço vertical entre as seções */
+  text-align: center;
+  background-color: #fff; /* Definir a cor de fundo da seção como branco */
+  padding: 20px;
+  border-radius: 10px; /* Adicionar bordas arredondadas à seção */
+  color: #000; /* Definir a cor do texto como preto */
 }
 
 .location-section h2,
@@ -747,403 +780,408 @@ body {
 .horarios-section h2,
 .eventos-section h2,
 .departamentos-section h2 {
-    margin-bottom: 20px;
-    color: #000; /* Definir a cor do texto do título como preto */
+  margin-bottom: 20px;
+  color: #000; /* Definir a cor do texto do título como preto */
 }
 
 .location-section iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-    border-radius: 10px; /* Adicionar bordas arredondadas ao iframe */
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 10px; /* Adicionar bordas arredondadas ao iframe */
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #000; /* Definir a cor do texto dos links como preto */
+  text-decoration: none;
+  color: #000; /* Definir a cor do texto dos links como preto */
 }
 
 .wrap {
-    max-width: 70rem;
-    margin: auto;
-    padding: 2rem;
-    background: #FFF;
+  max-width: 70rem;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
 }
 
 /* Reutilizando a formatação dos horários de culto para os horários das células */
 .horarios-section,
 .celulas-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto; /* Adicionar espaço vertical entre as seções */
-    text-align: center;
-    background-color: #fff; /* Definir a cor de fundo da seção como branco */
-    padding: 20px;
-    border-radius: 10px; /* Adicionar bordas arredondadas à seção */
-    color: #000; /* Definir a cor do texto como preto */
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto; /* Adicionar espaço vertical entre as seções */
+  text-align: center;
+  background-color: #fff; /* Definir a cor de fundo da seção como branco */
+  padding: 20px;
+  border-radius: 10px; /* Adicionar bordas arredondadas à seção */
+  color: #000; /* Definir a cor do texto como preto */
 }
 
 .horarios-section ul,
 .celulas-section ul,
 .departamentos-section ul {
-    list-style-type: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o padding padrão */
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o padding padrão */
 }
 
 .horarios-section li,
-.celulas-section li, 
+.celulas-section li,
 .departamentos-section li {
-    padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
-    border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
+  padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
+  border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
 }
 
 .horarios-section li:last-child,
 .celulas-section li:last-child,
-.departamentos-section li:last-child  {
-    border-bottom: none; /* Remove a linha inferior do último item */
+.departamentos-section li:last-child {
+  border-bottom: none; /* Remove a linha inferior do último item */
 }
 
 .carousel {
-    position: relative;
-    display: flex;
-    max-width: 64rem;
-    min-height: 40rem;
-    margin: auto;
-    background: black;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  max-width: 64rem;
+  min-height: 40rem;
+  margin: auto;
+  background: black;
+  justify-content: center;
 }
 
 .carousel-inner img {
-    width: 100%;
-    height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
-    object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
-    object-position: center; /* Centralizar a imagem dentro do carrossel */
+  width: 100%;
+  height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
+  object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
+  object-position: center; /* Centralizar a imagem dentro do carrossel */
 }
 
 .custom-carousel .carousel-inner {
-    border-radius: 15px; /* Adicionar bordas arredondadas ao carrossel */
-    overflow: hidden; /* Esconder o conteúdo que ultrapassa as bordas arredondadas */
+  border-radius: 15px; /* Adicionar bordas arredondadas ao carrossel */
+  overflow: hidden; /* Esconder o conteúdo que ultrapassa as bordas arredondadas */
 }
 
 .custom-carousel .carousel-control-prev-icon,
 .custom-carousel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Adicionar um fundo semitransparente aos ícones de controle */
-    border-radius: 50%; /* Tornar os ícones de controle circulares */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adicionar um fundo semitransparente aos ícones de controle */
+  border-radius: 50%; /* Tornar os ícones de controle circulares */
 }
 
 /* Ocultar os botões de navegação do carrossel */
 .carousel-control-prev,
 .carousel-control-next {
-    display: none;
+  display: none;
 }
 
 footer {
-    background-color: #000; /* Definir a cor de fundo do footer como preto */
-    color: #fff; /* Definir a cor do texto do footer como branco */
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
+  background-color: #000; /* Definir a cor de fundo do footer como preto */
+  color: #fff; /* Definir a cor do texto do footer como branco */
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px; /* Adicionar bordas arredondadas ao footer */
 }
 
 .contact-section a {
-    color: #000; /* Definir a cor do texto do link como preto */
-    text-decoration: none; /* Remover sublinhado do link */
+  color: #000; /* Definir a cor do texto do link como preto */
+  text-decoration: none; /* Remover sublinhado do link */
 }
 
 .contact-section a:hover {
-    color: #007bff; /* Cor do link ao passar o mouse */
+  color: #007bff; /* Cor do link ao passar o mouse */
 }
 
 .contact-section i {
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
 
 .contact-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .contact-icons p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Media Queries for extra small screens */
 @media (max-width: 578.98px) {
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-    .header .logo {
-        max-width: 30vw; /* Ajustar o tamanho da logo para 30% da largura da viewport em telas extra pequenas */
-        max-height: 30vh; /* Ajustar o tamanho da logo para 30% da altura da viewport em telas extra pequenas */
-    }
+  .header .logo {
+    max-width: 30vw; /* Ajustar o tamanho da logo para 30% da largura da viewport em telas extra pequenas */
+    max-height: 30vh; /* Ajustar o tamanho da logo para 30% da altura da viewport em telas extra pequenas */
+  }
 
-    .navbar-nav {
-        flex-direction: column;
-    }
+  .navbar-nav {
+    flex-direction: column;
+  }
 
-    .nav-item {
-        margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
-    }
+  .nav-item {
+    margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
+  }
 
-    .navbar-collapse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .carousel {
-        max-width: 100vw; /* Ajustar o tamanho do carrossel para 100% da largura da viewport em telas extra pequenas */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
+  .carousel {
+    max-width: 100vw; /* Ajustar o tamanho do carrossel para 100% da largura da viewport em telas extra pequenas */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
 
-    footer {
-        padding: 10px;
-        font-size: 12px;
-    }
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
 }
 
 /* Media Queries for small screens */
 @media (max-width: 767.98px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px;
-    }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
 
-    .header .logo {
-        order: 2;
-        margin-left: auto;
-        max-width: 15vw; /* Ajustar o tamanho da logo para 15% da largura da viewport em telas pequenas */
-        max-height: 15vh; /* Ajustar o tamanho da logo para 15% da altura da viewport em telas pequenas */
-    }
+  .header .logo {
+    order: 2;
+    margin-left: auto;
+    max-width: 15vw; /* Ajustar o tamanho da logo para 15% da largura da viewport em telas pequenas */
+    max-height: 15vh; /* Ajustar o tamanho da logo para 15% da altura da viewport em telas pequenas */
+  }
 
-    .navbar-toggler {
-        order: 1;
-    }
+  .navbar-toggler {
+    order: 1;
+  }
 
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-    }
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .nav-item {
-        margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
-    }
+  .nav-item {
+    margin: 5px 0; /* Ajustar o espaçamento vertical entre os itens do menu */
+  }
 
-    .carousel {
-        max-width: 80vw; /* Ajustar o tamanho do carrossel para 80% da largura da viewport em telas pequenas */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
+  .carousel {
+    max-width: 80vw; /* Ajustar o tamanho do carrossel para 80% da largura da viewport em telas pequenas */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
 
-    footer {
-        padding: 15px;
-        font-size: 15px;
-    }
+  footer {
+    padding: 15px;
+    font-size: 15px;
+  }
 }
 
 /* Media Queries for medium screens */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
 
-    .header .logo {
-        max-width: 10vw; /* Ajustar o tamanho da logo para 10% da largura da viewport em telas médias */
-        max-height: 10vh; /* Ajustar o tamanho da logo para 10% da altura da viewport em telas médias */
-    }
+  .header .logo {
+    max-width: 10vw; /* Ajustar o tamanho da logo para 10% da largura da viewport em telas médias */
+    max-height: 10vh; /* Ajustar o tamanho da logo para 10% da altura da viewport em telas médias */
+  }
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    .nav-item {
-        margin: 0 30px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
+  .nav-item {
+    margin: 0 30px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
 
-    .carousel {
-        max-width: 70vw; /* Ajustar o tamanho do carrossel para 70% da largura da viewport em telas médias */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
+  .carousel {
+    max-width: 70vw; /* Ajustar o tamanho do carrossel para 70% da largura da viewport em telas médias */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
 
-    footer {
-        padding: 20px;
-        font-size: 16px;
-    }
+  footer {
+    padding: 20px;
+    font-size: 16px;
+  }
 }
 
 /* Media Queries for large screens */
 @media (min-width: 992px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px; /* Espaçamento horizontal entre os itens do menu */
-        width: 100%;
-    }
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px; /* Espaçamento horizontal entre os itens do menu */
+    width: 100%;
+  }
 
-    .header .logo {
-        max-width: 8vw; /* Ajustar o tamanho da logo para 8% da largura da viewport em telas grandes */
-        max-height: 8vh; /* Ajustar o tamanho da logo para 8% da altura da viewport em telas grandes */
-    }
+  .header .logo {
+    max-width: 8vw; /* Ajustar o tamanho da logo para 8% da largura da viewport em telas grandes */
+    max-height: 8vh; /* Ajustar o tamanho da logo para 8% da altura da viewport em telas grandes */
+  }
 
-    .carousel {
-        max-width: 60vw; /* Ajustar o tamanho do carrossel para 60% da largura da viewport em telas grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
+  .carousel {
+    max-width: 60vw; /* Ajustar o tamanho do carrossel para 60% da largura da viewport em telas grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
 
-    footer {
-        padding: 25px;
-        font-size: 18px;
-    }
+  footer {
+    padding: 25px;
+    font-size: 18px;
+  }
 }
 
 /* Media Queries for extra large screens */
 @media (min-width: 1200px) {
-    .header .logo {
-        max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
-        max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
-    }
+  .header .logo {
+    max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
+    max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
+  }
 
-    .nav-item {
-        margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
+  .nav-item {
+    margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
 
-    .carousel {
-        max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
+  .carousel {
+    max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
 
-    footer {
-        padding: 30px;
-        font-size: 20px;
-    }
+  footer {
+    padding: 30px;
+    font-size: 20px;
+  }
 }
 
 /* Media Queries for very large screens */
 @media (min-width: 1534px) {
-    .header .logo {
-        max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
-        max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
-    }
+  .header .logo {
+    max-width: 5vw; /* Ajustar o tamanho da logo para 5% da largura da viewport em telas extra grandes */
+    max-height: 5vh; /* Ajustar o tamanho da logo para 5% da altura da viewport em telas extra grandes */
+  }
 
-    .nav-item {
-        margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
-    }
+  .nav-item {
+    margin: 0 50px; /* Ajustar o espaçamento horizontal entre os itens do menu */
+  }
 
-    .carousel {
-        max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
-        height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
-    }
+  .carousel {
+    max-width: 50vw; /* Ajustar o tamanho do carrossel para 50% da largura da viewport em telas extra grandes */
+    height: auto; /* Ajustar a altura do carrossel para se adaptar ao conteúdo */
+  }
 
-    footer {
-        padding: 30px;
-        font-size: 20px;
-    }
+  footer {
+    padding: 30px;
+    font-size: 20px;
+  }
 }
 
 /* Estilização geral para a seção de departamentos */
 .departamentos-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto; /* Adicionar espaço vertical entre as seções */
-    text-align: center;
-    background-color: #fff; /* Definir a cor de fundo da seção como branco */
-    padding: 20px;
-    border-radius: 10px; /* Adicionar bordas arredondadas à seção */
-    color: #000; /* Definir a cor do texto como preto */
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto; /* Adicionar espaço vertical entre as seções */
+  text-align: center;
+  background-color: #fff; /* Definir a cor de fundo da seção como branco */
+  padding: 20px;
+  border-radius: 10px; /* Adicionar bordas arredondadas à seção */
+  color: #000; /* Definir a cor do texto como preto */
 }
 
 .departamentos-section ul {
-    list-style-type: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o padding padrão */
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o padding padrão */
 }
 
 .departamentos-section li {
-    padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
-    border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
+  padding: 10px 0; /* Adiciona espaçamento vertical entre os itens da lista */
+  border-bottom: 1px solid #ccc; /* Adiciona uma linha inferior para separar os itens */
 }
 
 .departamentos-section li:last-child {
-    border-bottom: none; /* Remove a linha inferior do último item */
+  border-bottom: none; /* Remove a linha inferior do último item */
 }
 
 /* Estilização das imagens do carrossel */
 .departamentos-section .carousel-inner img {
-    width: 100%;
-    height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
-    object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
-    object-position: center; /* Centralizar a imagem dentro do carrossel */
+  width: 100%;
+  height: 100%; /* Ajustar a altura da imagem para preencher o carrossel */
+  object-fit: cover; /* Dimensionar a imagem para cobrir completamente o carrossel */
+  object-position: center; /* Centralizar a imagem dentro do carrossel */
 }
 
 /* Media Queries for small screens */
 @media (max-width: 767.98px) {
-    .departamentos-section {
-        padding: 15px;
-    }
+  .departamentos-section {
+    padding: 15px;
+  }
 
-    .departamentos-section h2 {
-        font-size: 1.5rem;
-    }
+  .departamentos-section h2 {
+    font-size: 1.5rem;
+  }
 
-    .departamentos-section li {
-        padding: 8px 0;
-    }
+  .departamentos-section li {
+    padding: 8px 0;
+  }
 }
 
 /* Media Queries for medium screens */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .departamentos-section {
-        padding: 20px;
-    }
+  .departamentos-section {
+    padding: 20px;
+  }
 
-    .departamentos-section h2 {
-        font-size: 1.75rem;
-    }
+  .departamentos-section h2 {
+    font-size: 1.75rem;
+  }
 
-    .departamentos-section li {
-        padding: 10px 0;
-    }
+  .departamentos-section li {
+    padding: 10px 0;
+  }
 }
 
 /* Media Queries for large screens */
 @media (min-width: 992px) {
-    .departamentos-section {
-        padding: 25px;
-    }
+  .departamentos-section {
+    padding: 25px;
+  }
 
-    .departamentos-section h2 {
-        font-size: 2rem;
-    }
+  .departamentos-section h2 {
+    font-size: 2rem;
+  }
 
-    .departamentos-section li {
-        padding: 12px 0;
-    }
+  .departamentos-section li {
+    padding: 12px 0;
+  }
 }
 
 /* Media Queries for very large screens */
 @media (min-width: 1534px) {
-    .departamentos-section {
-        padding: 30px;
-    }
+  .departamentos-section {
+    padding: 30px;
+  }
 
-    .departamentos-section h2 {
-        font-size: 2.25rem;
-    }
+  .departamentos-section h2 {
+    font-size: 2.25rem;
+  }
 
-    .departamentos-section li {
-        padding: 15px 0;
-    }
+  .departamentos-section li {
+    padding: 15px 0;
+  }
 }
